@@ -22,7 +22,7 @@ double RandomReal(double a, double b){
 
   //Take double num from rng and adjust to fit range given by (a,b)
   double num = gsl_rng_uniform(r);
-  double adj_num = num*(b-a);
+  double adj_num = num*(b-a)+a;
   
   gsl_rng_free(r);
  

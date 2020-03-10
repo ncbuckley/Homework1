@@ -30,7 +30,7 @@ int main() {
     
   //Creates a 1D Histogram file with random double elements in range (a,b-a)
   TFile* oFile = TFile::Open("Hist_random.root", "recreate");
-  TH1D* Hist_n1 = new TH1D("n1", "Random Numbers", bins, a, b-a);
+  TH1D* Hist_n1 = new TH1D("n1", "Random Numbers", bins, a, b);
     
   //Fills TTree with n random numbers using the RandomReal function and a,b for n elements
   for (Int_t i=0;i<n;i++) {
